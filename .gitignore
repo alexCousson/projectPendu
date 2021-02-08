@@ -1,0 +1,7 @@
+#Compiler files
+*.o
+Makefile
+prog
+
+#Vim generated files
+*.swo
