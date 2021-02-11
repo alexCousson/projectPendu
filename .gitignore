@@ -3,5 +3,11 @@
 Makefile
 prog
 
+#Git generated files
+.gitignore~
+
 #Vim generated files
 *.swo
+*.swp
+*.c~
+*.h~

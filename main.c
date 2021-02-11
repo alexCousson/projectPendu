@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "fonctions.h"
+#include <string.h>
 
 int main(void) {
-int i = 0;
-int j = 2;
-Dictionary test;
+char hidden_word[MAX_WORD_SIZE] = "";
 
-test.value = 5;
-test.name = "Alexandre";
+welcome();
 
-
-HelloWorld();
+strcpy(hidden_word, word_pick(Dictionary));
+printf("Le mot choisi est effectivement %s\n",hidden_word);
 
 
-printf("i vaut : %d et j vaut : %d\n", i, j);
-printf("value : %d / name : %s\n", test.value, test.name);
 
 return 0;
 }
