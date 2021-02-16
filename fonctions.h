@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 /*Macros*/
 
@@ -26,3 +27,4 @@ void	welcome(void);
 char*	word_pick(char *Dictionary);
 /*void 	word_pick(char *Dictionary);*/
 #endif
+
