@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <string.h>
-#include "fonctions.h"
+#include <time.h>
+
+#include "functions.h"
+#include "dico.h"
 
 int main(void) {
 char hidden_word[MAX_WORD_SIZE] = "";
