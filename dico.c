@@ -2,10 +2,8 @@
 
 /*Variables definitions*/
 
-int nb_players = 0;
 char* Dictionary = "wordDico.txt";
-
-
+char chosen_word[MAX_WORD_SIZE] = "";
 /*Functions definitions*/
 
 char*
@@ -59,9 +57,21 @@ word_pick(char *Dictionary) {
 	/*Pick a random word*/	
 	
 
-	
 
 return word;	
 }
 
 /****************************************************************/
+void
+display_word(char* word) {
+	printf("wl : %d\n",wl);	
+	for (int i = 0; i < wl; i++) {
+		if (i == 0 || i == (wl -1)) {
+			printf("%c", word[i]);	
+		}
+		else {
+			printf("*");
+		}
+	}
+	printf("\n");
+}
