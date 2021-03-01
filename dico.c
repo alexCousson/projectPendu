@@ -63,11 +63,14 @@ return word;
 
 /****************************************************************/
 void
-display_word(char* word) {
-	printf("wl : %d\n",wl);	
+display_word(char* word, int* letters) {
+	//printf("wl : %d\n",wl);	
 	for (int i = 0; i < wl; i++) {
 		if (i == 0 || i == (wl -1)) {
 			printf("%c", word[i]);	
+		}
+		else if (letters[i] == 1) {
+			printf("%c", word[i]);
 		}
 		else {
 			printf("*");

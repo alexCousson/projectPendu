@@ -39,12 +39,10 @@ input_letter(void) {
 	int position = (letter - 'a');
 	if (letters[position] == 0) {
 		letters[position] = letter;
-		ok = true;
-		printf("Case vide / ok = %d\n", ok);
-		check_letter(letter);
+		ok = check_letter(letter);
 	}
 	else if (letters[position] == letter) {
-		printf("Case non vide : Vous avez déjà entré cette lettre / ok = %d\n", ok);
+		printf("Vous avez déjà entré cette lettre\n");
 	}
 	return ok;
 }

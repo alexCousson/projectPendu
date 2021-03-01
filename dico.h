@@ -23,6 +23,6 @@ extern char chosen_word[MAX_WORD_SIZE];
 /*Functions Prototypes*/
 
 char*	word_pick(char *Dictionary);
-void 	display_word(char* word);
+void 	display_word(char* word, int* letters);
 #endif
 
