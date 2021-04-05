@@ -34,6 +34,12 @@ bool
 input_letter(void) {
 	char letter;
 	bool ok = false;
+
+	printf("Voci les lettres déjà rencontrées :\n");
+	for (int i = 0; i < 26; i++) {
+		printf("%c",letters[i]);
+	}
+	printf("\n");
 	printf("Veuillez entrer une nouvelle lettre :\n");
 	scanf(" %c", &letter);
 	int position = (letter - 'a');
@@ -49,7 +55,8 @@ input_letter(void) {
 
 
 /****************************************************************/
-bool 	check_letter(char letter) {
+bool 	
+check_letter(char letter) {
 	bool result = false;		
 	for (int i =0; i < wl; i++) {
 		if (letter == chosen_word[i]) {
